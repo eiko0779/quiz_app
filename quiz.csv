@@ -1,0 +1,15 @@
+1,日本で一番狭い都道府県は？,香川県,大阪府,東京都,沖縄県
+2,日本で一番広い県は？,岩手県,長野県,神奈川県,福島県
+3,日本で一番多い苗字は？,佐藤,田中,高橋,鈴木
+4,みかん生産量が一番多い都道府県は？,和歌山県,熊本県,愛媛県,静岡県
+5,ext3 ファイルシステムのパラメータを変更するコマンドはどれか？,tune2fs,dumpe2fs,fsck,tune3fs
+6,あるファイルシステムについて、ファイルシステムをチェックする時間間隔を設定するコマンドとアプションを組み合わせとして、適切なものはどれか？,tune2fs -i,dumpe2fs -c,dumpe2fs -i,tune2fs -c
+7,ext2 のファイルsシステムを大バックしながら修復するコマンドとして適切なものはどれか？,debugfs,dumpe2fs,e2fsck,tune2fs
+8,/tmp/team 以下に新規にファイルやディレクトリを作成した際、 /tmp/teamと同じグループが所有する設定として適切なものはどれか？,chmod 2775 /tmp/team,chmod g-s /tmp/team,chmod 4772 /tmp/team,chgrp /tmp/team,chown g-s /tmp/team
+9,あるプログラムの実行結果である標準出力、標準エラー出力のどちらもあらゆる端末、ファイル、デバイスに表示させないようにする際、そのプログラムのコマンドラインの最後の部分として適切なものはどれか？,> /dev/null2>&1,> /dex/null,>/dec/null 1>&2, 1>&2> /dev/null,2>&1 > /dev/null
+10,コマンド cmd1 を実行後、コマンド cmd2 を実行する際、適切なものはどれか？　cmd1 の実行結果を無視するものとする,cmd1 :cmd2,cmd1 | cmd2,cmd1 >cmd2,cmd1 < cmd2
+11,file1 から文字列 foo を大文字・小文字を区別せずに検索するコマンドラインとして適切なものはどれか？, cat file1 | grep -i foo,grep -i foo | file1,grep -n file1 < foo,grep -n foo file1, cat file1 > grep -n foo
+12,ファイル fileA の中の小文字をすべて大文字に変換して表示するコマンドラインとして、適切なものはどれか？,tr a-z A-Z < fileA, tr a-z A-Z fileA,conv o-z A-Z < fileA,conv a-z A-Z fileA
+13,ファイル fileA の中の bob という文字列全てを Bob　という文字列に変換して表示するコマンドラインとして、適切なものはどれか？,sed 's/bob/Bob/g' fileA,tr 's/bob/Bor' fileA, tr 's/bob/Bob/G' fileA,sed 's/bob/Bob/' fileA
+14,vi エディタで編集中の内容をすべて破棄して終了するコマンドとして適切なものはどれか？,:q!,:w,:wq!,:q,:quit
+15,vi エディタでファイルを編集中に、２行切り取りをして、数行移動後、カーソル行の下の行に貼り付ける場合、使用するコマンドはどれか？,p,P,i,a,o
