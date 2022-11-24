@@ -8,12 +8,12 @@ class Quiz:
     # #     self.loadQuiz()
     # #     # self.getQuiz()
 
-    def loadQuiz(self):
+    def loadQuiz(self,filenum):
         questions = []
         '''クイズの情報を取得する'''
         # ファイルを開く
         try:
-            f = open('quiz.csv')
+            f = open('quizdata/quiz{}.csv'.format(filenum))
         except FileNotFoundError:
             return None
 
@@ -25,7 +25,7 @@ class Quiz:
         f.close()
 
         #ランダムに10個を選択
-        select_quiz = random.sample(questions, 10)
+        select_quiz = random.sample(questions, 5)
         return select_quiz
 
 if __name__ == "__main__":

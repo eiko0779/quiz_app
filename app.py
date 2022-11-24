@@ -14,9 +14,9 @@ if "page_id" not in st.session_state:
     st.session_state.answers = []
     st.session_state.correct_answers = []
     st.session_state.results = []
-    #問題の読み込み
-    qz = Quiz()
-    st.session_state.questions = qz.loadQuiz()
+    # #問題の読み込み
+    # qz = Quiz()
+    # st.session_state.questions = qz.loadQuiz()
     #正解をカウント
     st.session_state.correct_count = 0
 
@@ -35,16 +35,21 @@ st.markdown(hide_menu_style, unsafe_allow_html=True)
 # 最初のページ
 def main():
     st.markdown(
-        "<h1 style='text-align: center;'>💕💕LPIC Quiz💕💕</h1>",
+        "<h1 style='text-align: center;'>-LPIC Quiz-</h1>",
         unsafe_allow_html=True,
     )
+    radio_dic = {"1章":1, "2章":2, "3章":3, "4章":4, "5章":5, "6章":6, "7章":7}
 
     def change_page():
-        #st.session_state.answers.append(st.session_state.answer0)
+        file_num = radio_dic[st.session_state.answer0]
+        #問題の読み込み
+        qz = Quiz()
+        st.session_state.questions = qz.loadQuiz(file_num)
+        # st.session_state.answers.append(st.session_state.answer0)
         st.session_state.page_id = "page1"
 
     with st.form("f0"):
-        st.radio("問題を選択", ["1章", "2章", "3章", "4章", "5章", "6章", "7章"], key="answer0")
+        st.radio("問題を選択", radio_dic, key="answer0")
         st.form_submit_button("スタート！", on_click=change_page)
 
 
