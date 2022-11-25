@@ -5,7 +5,7 @@ import random
 
 # ページのタイトル設定
 st.set_page_config(
-    page_title="LPIC Quiz",
+    page_title="LPIC101 Quiz",
 )
 
 # # セッション情報の初期化
