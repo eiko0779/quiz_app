@@ -80,7 +80,6 @@ def page1():
         st.radio(question, answers, key="answer1")
         st.form_submit_button("回答", on_click=change_page)
 
-
 # 問題２
 def page2():
     n = 2
@@ -108,7 +107,6 @@ def page2():
         st.radio(question, answers, key="answer2")
         st.form_submit_button("回答", on_click=change_page)
 
-
 # 問題３
 def page3():
     n = 3
@@ -135,8 +133,6 @@ def page3():
     with st.form("f1"):
         st.radio(question, answers, key="answer3")
         st.form_submit_button("回答", on_click=change_page)
-    
-
 
 # 問題４
 def page4():
@@ -164,8 +160,6 @@ def page4():
     with st.form("f1"):
         st.radio(question, answers, key="answer4")
         st.form_submit_button("回答", on_click=change_page)
-    
-
 
 # 問題５
 def page5():
@@ -192,6 +186,141 @@ def page5():
 
     with st.form("f1"):
         st.radio(question, answers, key="answer5")
+        st.form_submit_button("回答", on_click=change_page)
+
+# 問題6
+def page6():
+    n = 6
+    #問題の選択
+    question = st.session_state.questions[n-1][1]
+    #選択肢を作る（１）誤りの３つ
+    answers = st.session_state.questions[n-1][3:]
+    #選択肢を作る（２）正解の１つを入れる
+    correct_ans = st.session_state.questions[n-1][2]
+    answers.append(correct_ans)
+    st.session_state.correct_answers.append(correct_ans)
+    #選択肢を作る（３）シャッフルする
+    random.shuffle(answers)
+    st.markdown(
+        "<h1 style='text-align: center;'>第{}問</h1>".format(n),
+        unsafe_allow_html=True,
+    )
+
+    def change_page():
+        # nonlocal n
+        st.session_state.answers.append(st.session_state.answer6)
+        st.session_state.page_id = "page_judge"
+
+    with st.form("f1"):
+        st.radio(question, answers, key="answer6")
+        st.form_submit_button("回答", on_click=change_page)
+
+# 問題７
+def page7():
+    n = 7
+    #問題の選択
+    question = st.session_state.questions[n-1][1]
+    #選択肢を作る（１）誤りの３つ
+    answers = st.session_state.questions[n-1][3:]
+    #選択肢を作る（２）正解の１つを入れる
+    correct_ans = st.session_state.questions[n-1][2]
+    answers.append(correct_ans)
+    st.session_state.correct_answers.append(correct_ans)
+    #選択肢を作る（３）シャッフルする
+    random.shuffle(answers)
+    st.markdown(
+        "<h1 style='text-align: center;'>第{}問</h1>".format(n),
+        unsafe_allow_html=True,
+    )
+
+    def change_page():
+        # nonlocal n
+        st.session_state.answers.append(st.session_state.answer7)
+        st.session_state.page_id = "page_judge"
+
+    with st.form("f1"):
+        st.radio(question, answers, key="answer7")
+        st.form_submit_button("回答", on_click=change_page)
+
+# 問題８
+def page8():
+    n = 8
+    #問題の選択
+    question = st.session_state.questions[n-1][1]
+    #選択肢を作る（１）誤りの３つ
+    answers = st.session_state.questions[n-1][3:]
+    #選択肢を作る（２）正解の１つを入れる
+    correct_ans = st.session_state.questions[n-1][2]
+    answers.append(correct_ans)
+    st.session_state.correct_answers.append(correct_ans)
+    #選択肢を作る（３）シャッフルする
+    random.shuffle(answers)
+    st.markdown(
+        "<h1 style='text-align: center;'>第{}問</h1>".format(n),
+        unsafe_allow_html=True,
+    )
+
+    def change_page():
+        # nonlocal n
+        st.session_state.answers.append(st.session_state.answer8)
+        st.session_state.page_id = "page_judge"
+
+    with st.form("f1"):
+        st.radio(question, answers, key="answer8")
+        st.form_submit_button("回答", on_click=change_page)
+
+# 問題９
+def page9():
+    n = 9
+    #問題の選択
+    question = st.session_state.questions[n-1][1]
+    #選択肢を作る（１）誤りの３つ
+    answers = st.session_state.questions[n-1][3:]
+    #選択肢を作る（２）正解の１つを入れる
+    correct_ans = st.session_state.questions[n-1][2]
+    answers.append(correct_ans)
+    st.session_state.correct_answers.append(correct_ans)
+    #選択肢を作る（３）シャッフルする
+    random.shuffle(answers)
+    st.markdown(
+        "<h1 style='text-align: center;'>第{}問</h1>".format(n),
+        unsafe_allow_html=True,
+    )
+
+    def change_page():
+        # nonlocal n
+        st.session_state.answers.append(st.session_state.answer9)
+        st.session_state.page_id = "page_judge"
+
+    with st.form("f1"):
+        st.radio(question, answers, key="answer9")
+        st.form_submit_button("回答", on_click=change_page)
+
+# 問題１０
+def page10():
+    n = 10
+    #問題の選択
+    question = st.session_state.questions[n-1][1]
+    #選択肢を作る（１）誤りの３つ
+    answers = st.session_state.questions[n-1][3:]
+    #選択肢を作る（２）正解の１つを入れる
+    correct_ans = st.session_state.questions[n-1][2]
+    answers.append(correct_ans)
+    st.session_state.correct_answers.append(correct_ans)
+    #選択肢を作る（３）シャッフルする
+    random.shuffle(answers)
+    st.markdown(
+        "<h1 style='text-align: center;'>第{}問</h1>".format(n),
+        unsafe_allow_html=True,
+    )
+
+    def change_page():
+        # nonlocal n
+        st.session_state.answers.append(st.session_state.answer10)
+        st.session_state.page_id = "page_judge"
+
+    with st.form("f1"):
+        st.radio(question, answers, key="answer10")
         st.form_submit_button("回答", on_click=change_page)
 
 #正誤判定
@@ -250,11 +379,11 @@ def page_end():
     # )
     for num, value in enumerate(st.session_state.results):
         st.markdown(
-            f"<div style='text-align: center;'>第{num+1}問：{value} </div>",
+            "<div style='text-align: center;'>第{:02d}問：{} </div>".format(num+1,value),
             unsafe_allow_html=True,
         )
 
-    if correct_rate > 30:
+    if correct_rate > 70:
         st.balloons()
 
     def change_page():
@@ -292,9 +421,24 @@ if st.session_state.page_id == "page4":
 if st.session_state.page_id == "page5":
     page5()
 
+if st.session_state.page_id == "page6":
+    page6()
+
+if st.session_state.page_id == "page7":
+    page7()
+
+if st.session_state.page_id == "page8":
+    page8()
+
+if st.session_state.page_id == "page9":
+    page9()
+
+if st.session_state.page_id == "page10":
+    page10()
+
 if st.session_state.page_id == "page_judge":
     judge_count = len(st.session_state.answers)
     page_judge(judge_count)
     
-if st.session_state.page_id == "page6":
+if st.session_state.page_id == "page11":
     page_end()

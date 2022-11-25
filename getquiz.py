@@ -25,7 +25,7 @@ class Quiz:
         f.close()
 
         #ランダムに10個を選択
-        select_quiz = random.sample(questions, 5)
+        select_quiz = random.sample(questions, 10)
         return select_quiz
 
 if __name__ == "__main__":
