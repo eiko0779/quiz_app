@@ -35,7 +35,7 @@ st.markdown(hide_menu_style, unsafe_allow_html=True)
 # 最初のページ
 def main():
     st.markdown(
-        "<h1 style='text-align: center;'>-LPIC Quiz-</h1>",
+        "<h1 style='text-align: center;'>-LPIC101 Quiz-</h1>",
         unsafe_allow_html=True,
     )
     radio_dic = {"1章":1, "2章":2, "3章":3, "4章":4, "5章":5, "6章":6, "7章":7}
