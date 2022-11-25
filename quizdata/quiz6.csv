@@ -1,0 +1,11 @@
+﻿1,6-7：パッケージファイルをダウンロードした。インストールする前にパッケージファイルを指定して、そのパッケージが依存するパッケージを表示するコマンドラインとして適切なものはどれか？,rpm -qpR パッケージファイル名,rpm -I パッケージファイル名,rpm -deb パッケージファイル名,rpm -R パッケージファイル名,rpm -pD パッケージファイル名
+2,6-8：rpm コマンドで、インストール済みのパッケージを指定し、そのパッケージに含まれるファイル名をリスト表示するオプションとして適切なものはどれか？,--query --list,--query --info,--query --installed,--query --all,--query --file
+3,6-10：yum コマンドで、パッケージグループを一覧表示するものとして適切なものはどれか？,yum grouplist,yum groups,yum -group show,yum collection
+4,6-11：/etc/mke2fs.conf ファイルを所有するパッケージを表示するオプションとして適切なものはどれか？,-qf,--qi,-qp,-ql
+5,6-21：zypper コマンドで、パッケージを削除するものとして適切なものはどれか？,zypper remove パッケージ名,zypper delete パッケージ名,zypper -r パッケージ名,zypper erase パッケージ名
+6,6-23：Debianシステムではパッケージのインストール時に多くのファイルが作成されている。そこでインストール済みのパッケージから/etc/sample.conf ファイルが含まれているパッケージを表示するためのコマンドラインとして、適切なものはどれか？,dpkg -S /etc/sample.conf,dpkg serch /etc/sample.conf,apt -i /etc/sample.conf,apt-serch /etc/sample.conf,dpkg -info /etc/sample.conf
+7,6-26：deb パッケージである pkgname を、設定ファイルは残してアンインストールするためのコマンドラインとして、適切なものはどれか？,dpkg -r pkgname または dpkg --remove pkgname,dpkg -R pkgname または --Remove pkgname,dpkg -D pkgname または dpkg --Delete pkgname,dpkg -d pkgname または dpkg --delete pkgname
+8,6-29：dpkg コマンドでパッケージをインストールしようとしましたが、依存関係の問題で失敗した。再度、依存関係が欠如しているパッケージも含めて自動的にインストールするコマンドラインとして適切なものはどれか？,apt-get install パッケージ名,dpkg --fix --all パッケージ名,dpkg-reconfigure --all パッケージ名,apt-fix --all パッケージ名,apt autoinstall パッケージ名,apt-conflict fix パッケージ名
+9,6-30：Debian 系システムで、現在インストールされているパッケージの削除は行わず、可能な限りシステムを最新の状態にアップグレートするコマンドラインとして適切なものはどれか？,apt-get upgrade,apt-get install,apt-get update,apt-get dist-upgrade,apt-get full-upgrade
+10,6-31：Debian 系のパッケージ管理システムで、パッケージの置かれているネットワーク上の場所を記述するファイルはどれか？,/etc/apt/sources.list,/etc/apt/apt.conf,/etc/apt/apt.conf.d,/etc/dpkg/dpkg.conf
+11,6-20：rpm パッケージのインストールは行わず、rpm ファイルのダウンロードだけをする場合に使用するコマンドとして適切なものはどれか？,yumdownloader,getrpm,getyum,rpmdownloader

@@ -1,0 +1,11 @@
+﻿1,7-6：必要な依存性モジュールをロードするコマンドとして適切なものはどれか？,modprobe,insmod,modinstall,lsmod
+2,7-15：UEFI のブートローダはどこに配置されているか？,EFI システムパーティション,EFI ブートローダ,MBR,127 番目のプライマリパーティション,/boot のあるパーティション
+3,7-17EFI パーティション中にあるものとして、適切なものはどれか？,第１ステージのブートローダ,Linux ルートファイルシステム,ユーザホームディレクトリ,Linux デフォルトシェルバイナリ,Linux デフォルトスワップ領域
+4,7-21：システム立ち上げ時にカーネルが出力するメッセージをシステム起動後に確認したい場合に、実行するコマンドラインとして適切なものはどれか？,cat /var/log/dmesg,cat /var/log/kernel.log,cat /proc/dmesg,cat /proc/kernel.log
+5,7-23：/var/log/dmesg がリセットされるタイミングとして、適切なものはどれか？,dmesg --clear で明示的にリセットしたとき,再起動・リブートしたとき,一定時間（デフォルト15分）が経過したとき,dmesg コマンドを実行して読み込んだとき
+6,7-29：systemd のターゲット(target)の説明で誤っているものはどれか？,ブートローダのカーネルオプションでデフォルトターゲットを変更する,ターゲットは systemed の管理対象であるユニットのタイプの１つである,デフォルトランレベルに相当するターゲットはdefault.target である,ターゲットは SysV init のランレベルに相当する
+7,7-30：systemd で、デフォルトのターゲットユニットとして multi-user.target を設定するコマンドラインとして適切なものはどれか？,systemctl set-default multi-user.target,systemctl set -p multi-user.target,systemctl set-runlevel multi-user.target,systemctl isolate multi-user.target,systemctl get-default multi-user.target
+8,7-2：lspci コマンドで表示できる情報として誤っているものはどれか？,イーサネットのMACアドレス,デバイスの IRQ 情報,バススピード,デバイスのベンダID
+9,7-3：USB に接続されたデバイスの情報を表示するコマンドはどれか？,lsusb,lsof,lsmod,lsscsi
+10,7-5：Linux カーネルのモジュールの状態を表示するコマンドとして適切なものはどれか？,lsmod,lsusb,lspci,modprobe
+11,7-9：「grub-install /dev/sda」を実行するとどうなるか？,必要なファイルをインストールしてブートローダを構成する,/dev/sda のパーティションを設定する,設定ファイルである grub.conf を再作成する,カーネルとカーネルローダブルモジュールを生成する
